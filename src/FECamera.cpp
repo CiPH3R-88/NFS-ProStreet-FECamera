@@ -1,7 +1,4 @@
 // FECameraCore — NFS ProStreet
-// Pointer chain + read/write for the FE camera struct.
-//
-// Pointer: [nfs.exe + 0x00BFAD24] -> FE camera struct
 
 #define WIN32_LEAN_AND_MEAN
 #include <Windows.h>
@@ -20,7 +17,7 @@ namespace Off {
     constexpr uintptr_t LookX   = 0xBC;
     constexpr uintptr_t LookY   = 0xC0;
     constexpr uintptr_t LookZ   = 0xC4;
-    constexpr uintptr_t Default = 0x80;   // pristine value offset
+    constexpr uintptr_t Default = 0x80;
 }
 
 static constexpr uintptr_t PTR_OFFSET = 0x00BFAD24u;
